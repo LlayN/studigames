@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+
+/* RACINE */
+html{
+  margin: 0;  
+  padding: 0;
+}
+
+body{
+  background-color: rgb(2, 2, 12);
+}
+
+
+header{
+  background-color: #1f2030f5;
+}
+
+
+
+/* NAVBAR */
+.navbar{
+  box-shadow: 0px 2px 5px rgb(19, 19, 19);
+  height: 70px;
+}
+
+.contHeader{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* BOUTON MENU */
+.btn-register{
+  background-image: linear-gradient(to bottom, #8619ea, #b178e7);
+  box-shadow: 4px -2px 13px rgb(19, 19, 19);
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 17px;
+  width: 110px;
+  border: none;
+}
+
+.btn-register:hover{
+  border-color: #41c013;
+  color: #41c013;
+}
+
+.btn-connect{
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Outfit', sans-serif; 
+  font-size: 17px;
+  width: 110px;
+}
+
+.btn-connect:hover{
+  background-color: #41c013;
+}
+
+.divButton{
+  display: flex;
+  width: 250px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.divButtonMobile{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* BARRE DE RECHERCHE */
+.divSearchbarPc { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 31vw;
+}
+
+.divSearchbarMobile{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border: none;
+
+}
+
+.divSearchbarMobile > input{
+  width: 70vw;
+  height: 30px;
+  font-size: 16px;
+  max-width: 500px;
+}
+
+.divSearchbarMobile > span{
+  top: 0;
+  right: 18%;
+}
+
+.searchbar {
+  background-color: #343649;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-family: 'Outfit', sans-serif;
+}
+
+
+.searchbar::placeholder {
+  color: white;
+  text-indent: 10px;
+}
+
+.searchbar:focus{
+  border: 1px solid #343649 ;
+  background-color: #343649;
+  color: white;
+  box-shadow: none;
+  border: none;
+}
+
+.searchbar:active{
+  box-shadow: none;
+  border: none;
+}
+
+
+
+.form-control[type="search"]::-webkit-search-cancel-button,
+.form-control[type="search"]::-webkit-search-clear-button {
+    display: none;
+}
+
+/* MENU LATERAL */
+.rowAside{
+  height: 100vh;
+}
+
+.leftList{
+  width: 200px;
+  border-right: 1px solid #101116f5;
+}
+
+.divLi{
+  color: white;
+  margin-top: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px ;
+}
+
+.divLi > li:hover{
+  color: #41c013;
+}
+
+hr{
+  color: rgb(49, 49, 49);
+}
+
+.bi-search{
+  font-size: 22px; 
+  color: #ffffff
+}
+
+.bi-list{
+  font-size: 30px; 
+  color: #53fc18;
+}
+
+.bi-heart{
+  font-size: 18px;
+}
+
+.divMenuLateral{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 33px;
+  margin-bottom: 15px;
+}
+
+.buttonLateralPc, .buttonLateralMobile{
+  width: auto;
+  background-color: #34364900;
+  border: none;
+  box-shadow: none;
+  
+}
+
+.divMenuLateral > h2{
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 19px;
+  white-space: nowrap
+}
+
+.divMenuLateral > *{
+  padding: 0;
+  margin: 0;
+}
+
+/* MENU LATERAL AFTER ANIMATION */
+
+.leftListAfterAnimation{
+  width: 50px;
+  border-right: 1px solid #101116f5;
+  display: none;
+}
+
+/* MENU BOTTOM MOBILE */
+
+.divMenuBottomMobile{
+  display: block;
+  width: 100%;
+  height: 65px;
+  background-color: #1f2030f5;
+  position: fixed;
+  bottom: 0;
+
+}
+
+.divDesign{
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  border-left: 100vw solid transparent;
+  border-bottom: 13px solid #1f2030f5;
+  transform: translate(0, -100%);
+}
