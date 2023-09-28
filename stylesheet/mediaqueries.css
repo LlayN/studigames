@@ -12,7 +12,6 @@
   .divButtonMobile > button{
     display: flex;
     font-size: 16px;
-
     justify-content: center;
     align-items: center;
   }
@@ -31,7 +30,6 @@
   .divMenuBottomMobile{
     display: none;
   }
-  
 }
 
 
