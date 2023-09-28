@@ -15,6 +15,12 @@
     justify-content: center;
     align-items: center;
   }
+  .contHeader{
+    justify-content: center;
+  }
+  .logo{
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 259px){

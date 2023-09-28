@@ -11,12 +11,9 @@ body{
   background-color: rgb(2, 2, 12);
 }
 
-
 header{
   background-color: #1f2030f5;
 }
-
-
 
 /* NAVBAR */
 .navbar{
@@ -32,7 +29,6 @@ header{
   padding: 0;
   margin: 0;
 }
-
 
 /* BOUTON MENU */
 .btn-register{
@@ -77,8 +73,6 @@ header{
   align-items: center;
 }
 
-
-
 /* BARRE DE RECHERCHE */
 .divSearchbarPc { 
   width: 45%;
@@ -110,12 +104,12 @@ header{
   color: white;
   font-size: 17px;
   font-family: 'Outfit', sans-serif;
+  border-radius: 10px 30px 10px 3px;
 }
-
 
 .searchbar::placeholder {
   color: white;
-  text-indent: 10px;
+  text-indent: 30px;
 }
 
 .searchbar:focus{
@@ -131,7 +125,10 @@ header{
   border: none;
 }
 
-
+.searchbar::placeholder{
+  background-image: url(../resources/svg/search-sharp.svg);
+  background-repeat: no-repeat;
+}
 
 .form-control[type="search"]::-webkit-search-cancel-button,
 .form-control[type="search"]::-webkit-search-clear-button {
@@ -159,9 +156,8 @@ header{
 
 .divLi:hover svg path{
   fill: #53fc18;
-
-
 }
+
 .divLi > li:hover{
   color: #41c013;
 }
@@ -241,3 +237,4 @@ hr{
   border-bottom: 13px solid #1f2030f5;
   transform: translate(0, -100%);
 }
+
