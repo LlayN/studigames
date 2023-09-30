@@ -4,7 +4,9 @@ const showDivMobile = document.querySelector('.leftListAfterAnimation')
 const showDivPc = document.querySelector('.leftList')
 
 
-var checkLateral = window.innerWidth <= 767;
+/* CODE POUR BOUTON LATERAL MENU */
+
+let checkLateral = window.innerWidth <= 767;
 
 buttonLateralPc.addEventListener('click', () => {
   showDivPc.style.display = 'none'
@@ -38,3 +40,14 @@ function loadRezise(){
 
 window.addEventListener('load', loadRezise);
 window.addEventListener('resize', handleResize);
+
+
+const preLoader = document.querySelector('.preLoader')
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    preLoader.style.display = "none"
+  }, 2500)
+})
+
+
+

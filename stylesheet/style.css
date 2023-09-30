@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
+ @-webkit-keyframes animVaisseau {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+}
+@keyframes animVaisseau {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+
+  }
+}
 
 /* RACINE */
 html{
@@ -13,6 +43,44 @@ body{
 
 header{
   background-color: #1f2030f5;
+}
+
+
+/* PRELOAD */
+.preLoader{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../resources/svg/blob-scene-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  z-index: 100;
+}
+
+
+.divLoad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: rgb(214, 214, 214);
+  font-size: 100px;
+  font-family: 'Bangers', cursive;
+}
+
+.titleLoad{
+  position: absolute;
+  transform: translateY(120px);
+}
+
+
+
+.animVaisseau {
+	-webkit-animation: animVaisseau 0.5s infinite alternate-reverse both;
+	        animation: animVaisseau 0.5s infinite alternate-reverse both;
 }
 
 /* NAVBAR */
@@ -43,8 +111,8 @@ header{
 }
 
 .btn-register:hover{
-  border-color: #41c013;
-  color: #41c013;
+  background-image: linear-gradient(to bottom, #8619ea, #8f8f8f);
+  color: white;
 }
 
 .btn-connect{
@@ -56,7 +124,7 @@ header{
 }
 
 .btn-connect:hover{
-  background-color: #41c013;
+  color: #ffffff8f;
 }
 
 .divButton{
@@ -86,17 +154,13 @@ header{
 
 }
 
-.divSearchbarMobile > input{
-  width: 70vw;
+.divSearchbarMobile > .searchbar{
+  width: 80vw;
   height: 30px;
   font-size: 16px;
-  max-width: 500px;
+  max-width: 600px;
 }
 
-.divSearchbarMobile > span{
-  top: 0;
-  right: 18%;
-}
 
 .searchbar {
   background-color: #343649;
@@ -155,11 +219,11 @@ header{
 }
 
 .divLi:hover svg path{
-  fill: #53fc18;
+  fill: #8619ea;
 }
 
 .divLi > li:hover{
-  color: #41c013;
+  color: #8619ea;
 }
 
 hr{
