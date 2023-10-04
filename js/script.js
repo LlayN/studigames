@@ -1,8 +1,9 @@
 const buttonLateralPc = document.querySelector('.buttonLateralPc')
 const buttonLateralMobile = document.querySelector('.buttonLateralMobile')
-const showDivMobile = document.querySelector('.leftListAfterAnimation')
-const showDivPc = document.querySelector('.leftList')
-
+const showDivMobile = document.querySelector('.leftListMobile')
+const showDivPc = document.querySelector('.leftListPc')
+const divCollapseLateralPc = document.querySelector('#divCollapseLateralPc')
+const btnRegister = document.querySelector('.btn-register')
 
 /* CODE POUR BOUTON LATERAL MENU */
 
@@ -23,11 +24,13 @@ function handleResize() {
     checkLateral = true;
     showDivPc.style.display = 'none';
     showDivMobile.style.display = 'block';
+    
   } 
   else if (window.innerWidth > 767 && checkLateral) {
     checkLateral = false;
     showDivMobile.style.display = 'none';
     showDivPc.style.display = 'block';
+    
   }
 }
 
@@ -49,5 +52,10 @@ window.addEventListener('load', () => {
   }, 2500)
 })
 
+btnRegister.addEventListener('mouseenter', () => {
+  btnRegister.classList.add('btnRegisterAnim')
+})
 
-
+btnRegister.addEventListener('mouseleave', () => {
+  btnRegister.classList.remove('btnRegisterAnim')
+})
