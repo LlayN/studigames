@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
  @-webkit-keyframes animVaisseau {
@@ -96,7 +96,7 @@ html{
 }
 
 body{
-  background-color: rgb(2, 2, 12);
+  background-color: #02020c;
 }
 
 header{
@@ -131,6 +131,8 @@ header{
 
 .titleLoad{
   position: absolute;
+  text-align: center;
+  width: 100%;
   transform: translateY(120px);
 }
 
@@ -271,7 +273,7 @@ header{
 
 /* MENU LATERAL */
 .rowAside{
-  height: 100vh;
+
 }
 
 
@@ -279,7 +281,8 @@ header{
   background-color: rgb(2, 2, 12);
   width: 200px;
   border-right: 1px solid #101116f5;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   z-index: 50;
 }
 
@@ -298,6 +301,7 @@ header{
 
 .divLi > a > li:hover{
   color: #8619ea;
+  font-weight: 500
 }
 
 hr{
@@ -351,6 +355,8 @@ hr{
 
 .leftListMobile{
   width: 50px;
+  min-height: 100vh;
+  height: auto;
   border-right: 1px solid #101116f5;
   display: none;
 }
@@ -380,7 +386,7 @@ hr{
 
 /* MAIN DIV */
 
-.divnewGames{
+.divnewGames {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -405,7 +411,7 @@ hr{
 }
 
 .one{
-  background-image: url(../resources/image/dicedreams.png);
+  background-image: url(../resources/image/dicebattle.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -429,6 +435,32 @@ hr{
   box-shadow: 0px 0px 5px rgb(29, 29, 29);
 }
 
+.playButtonGame{
+  display: flex;
+  width: 13%;
+  max-width: 142px;
+  min-width: 119px;
+  justify-content: center;
+  background-color: #8619ea;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgb(29, 29, 29);
+}
+
+.btnLike{
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+}
+
+.likeButton{
+  margin-right: 18px;
+
+
+
+}
+
 .disableButton{
   width: 100%;
   display: flex;
@@ -446,9 +478,26 @@ hr{
   align-items: center;
   color: #ffffff;
   background-color: transparent;
-  border: transparent;
+  border: none;
+  border-radius: 3px;
+  width: 80%;
   height: 30px;
   font-size: 17px;
+  font-weight: 500;
+}
+
+.btnStylePlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #8619ea;
+  border: transparent;
+  border-radius: 5px;
+  width: 135px;
+  height: 30px;
+  font-size: 17px;
+  font-family: 'Outfit', sans-serif;
 }
 
 .btnDisabled{
@@ -465,4 +514,132 @@ hr{
 .rotateSetting {
 	-webkit-animation: rotateSetting 1.9s linear infinite both;
 	        animation: rotateSetting 1.9s linear infinite both;
+}
+
+/* GAME PAGE */
+
+.game{
+  width: 50vw;
+  height: 500px;
+  background-image: url(../resources/image/dicebattlecover.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: relative;
+}
+
+.game::after{
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to top, #acacacee, #7a7a7a96);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 10px;
+}
+
+.gameDescription{
+  background-color: #1f2030f5;
+  border-radius: 15px;
+  width: 50vw;
+  margin-bottom: 75px;
+
+}
+
+.gameBar{
+  background-color: #1f2030f5;
+  border-radius: 15px;
+  width: 50vw;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gameTitle{
+  display: flex;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  margin-left: 18px;
+}
+
+.descriptionTitle{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  margin-left: 18px;
+}
+
+.gameDescription > .list{
+  margin-top: 10px;
+  display: flex;
+  color: rgb(134, 134, 134);
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  margin-left: 18px;
+}
+
+.list > .listValue{
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  text-indent: 18px;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(134, 134, 134);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.descriptionText {
+  margin-left: 18px;
+}
+
+
+.line > hr{
+  width: 85%;
+  border-width: 2px;
+  color: #ffffff62;
+  border-radius: 10px;
+}
+
+
+.divGameLaunch{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  background-color: transparent;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 50px;
+}
+
+/* FOOTER */
+
+.footer{
+  width: 100vw;
+  height: 80px;
+  background-color: #1f2030f5;
+  position: absolute;
+  bottom: -1;
+  display: flex;
+  color: white;
+  font-family: 'Outfit', sans-serif;;
+  justify-content: center;
+  align-items: center;
 }
