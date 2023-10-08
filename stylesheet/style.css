@@ -299,7 +299,7 @@ header{
   fill: #8619ea;
 }
 
-.divLi > a > li:hover{
+.divLi:hover{
   color: #8619ea;
   font-weight: 500
 }
