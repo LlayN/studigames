@@ -272,10 +272,6 @@ header{
 }
 
 /* MENU LATERAL */
-.rowAside{
-
-}
-
 
 .leftListPc{
   background-color: rgb(2, 2, 12);
@@ -284,6 +280,18 @@ header{
   min-height: 100vh;
   height: auto;
   z-index: 50;
+  position: absolute;
+}
+
+.leftListMobile{
+  background-color: rgb(2, 2, 12);
+  width: 50px;
+  min-height: 100vh;
+  height: auto;
+  border-right: 1px solid #101116f5;
+  display: none;
+  z-index: 50;
+  position: absolute;
 }
 
 .divLi{
@@ -351,16 +359,6 @@ hr{
   margin: 0;
 }
 
-/* MENU LATERAL AFTER ANIMATION */
-
-.leftListMobile{
-  width: 50px;
-  min-height: 100vh;
-  height: auto;
-  border-right: 1px solid #101116f5;
-  display: none;
-}
-
 /* MENU BOTTOM MOBILE */
 
 .divMenuBottomMobile{
@@ -371,7 +369,6 @@ hr{
   position: fixed;
   bottom: 0;
   z-index: 100;
-
 }
 
 .divDesign{
@@ -380,7 +377,7 @@ hr{
   position: absolute;
   border-left: 100vw solid transparent;
   border-bottom: 13px solid #1f2030;
-  transform: translate(0, -100%);
+  transform: translate(0, -90%);
   position: fixed;
 }
 
@@ -396,6 +393,8 @@ hr{
   gap: 30px;
   row-gap: 100px;
   padding-top: 50px;
+  padding-left: 210px;
+  height: 100vh;
 
 }
 
@@ -403,7 +402,9 @@ hr{
   width: 15vw;
   min-width: 260px;
   max-width: 300px;
-  height: 280px;
+  height: 13vw;
+  min-height: 200px;
+  max-height: 250px;
   border-radius: 8px;
   box-shadow: 0px 0px 5px rgb(29, 29, 29);
   display: flex;
@@ -632,14 +633,13 @@ hr{
 /* FOOTER */
 
 .footer{
-  width: 100vw;
+  width: 100%;
   height: 80px;
   background-color: #1f2030f5;
-  position: absolute;
-  bottom: -1;
   display: flex;
   color: white;
   font-family: 'Outfit', sans-serif;;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }

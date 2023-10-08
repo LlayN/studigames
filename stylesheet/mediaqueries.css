@@ -21,6 +21,10 @@
   .logo{
     margin-top: 5px;
   }
+
+  .footer{
+    display: none;
+  }
 }
 
 @media (max-width: 259px){
@@ -37,6 +41,17 @@
     display: none;
   }
 }
+
+@media (max-width: 370px){
+  .headGame{
+    min-width: 190px;
+
+
+  }
+ 
+}
+
+
 
 
 
