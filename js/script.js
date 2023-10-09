@@ -5,6 +5,7 @@ const showDivPc = document.querySelector('.leftListPc')
 const btnRegister = document.querySelector('.btn-register')
 const divnewGames = document.querySelector('.divnewGames')
 
+
 /* CODE POUR BOUTON LATERAL MENU */
 
 let checkLateral = window.innerWidth <= 767;
@@ -13,12 +14,14 @@ buttonLateralPc.addEventListener('click', () => {
   showDivPc.style.display = 'none'
   showDivMobile.style.display = 'block'
   divnewGames.style.paddingLeft = '60px'
+  divnewGames.classList.remove('contrastEffect') = 'block'
+  
 })
 
 buttonLateralMobile.addEventListener('click', () => {
   showDivMobile.style.display = 'none'
   showDivPc.style.display = 'block'
-  divnewGames.style.paddingLeft = '210px'
+  divnewGames.classList.add('contrastEffect') = 'block'
 })
 
 function handleResize() {
@@ -40,6 +43,7 @@ function loadRezise(){
   if(window.innerWidth <= 767){
     showDivPc.style.display = 'none'
     showDivMobile.style.display = 'block'
+    divnewGames.style.paddingLeft = '60px'
   }
 }
 
