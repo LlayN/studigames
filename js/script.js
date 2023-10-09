@@ -13,15 +13,19 @@ let checkLateral = window.innerWidth <= 767;
 buttonLateralPc.addEventListener('click', () => {
   showDivPc.style.display = 'none'
   showDivMobile.style.display = 'block'
-  divnewGames.style.paddingLeft = '60px'
-  divnewGames.classList.remove('contrastEffect') = 'block'
+  if(window.innerWidth >= 767){
+    divnewGames.style.paddingLeft = '60px'
+  }
   
 })
 
 buttonLateralMobile.addEventListener('click', () => {
   showDivMobile.style.display = 'none'
   showDivPc.style.display = 'block'
-  divnewGames.classList.add('contrastEffect') = 'block'
+  if(window.innerWidth >= 767){
+    divnewGames.style.paddingLeft = '210px'
+  }
+  
 })
 
 function handleResize() {
@@ -30,6 +34,7 @@ function handleResize() {
     showDivPc.style.display = 'none';
     showDivMobile.style.display = 'block';
     divnewGames.style.paddingLeft = '60px'
+
   } 
   else if (window.innerWidth > 767 && checkLateral) {
     checkLateral = false;
