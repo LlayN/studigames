@@ -153,7 +153,6 @@ header{
   box-shadow: 0px 2px 5px rgb(19, 19, 19);
   height: 70px;
   z-index: 100;
-  
 }
 
 .contHeader{
@@ -164,7 +163,7 @@ header{
   padding: 0;
   margin: 0;
   background-color: #1f2030;
-
+  position: fixed;
 }
 
 /* BOUTON MENU */
@@ -222,24 +221,6 @@ header{
   background-color: #1f2030;
 }
 
-.divSearchbarMobile{
-  display: flex;
-  position: relative;
-  justify-content: center;
-  border: none;
-  background-color: #1f2030;
-  z-index: 100;
-
-}
-
-.divSearchbarMobile > .searchbar{
-  width: 80vw;
-  height: 30px;
-  font-size: 16px;
-  max-width: 600px;
-}
-
-
 .searchbar {
   background-color: #343649;
   border: none;
@@ -283,21 +264,19 @@ header{
   background-color: rgb(2, 2, 12);
   width: 200px;
   border-right: 1px solid #101116f5;
-  min-height: 100vh;
-  height: auto;
   z-index: 50;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
 }
 
 .leftListMobile{
   background-color: rgb(2, 2, 12);
   width: 50px;
-  min-height: 100vh;
-  height: auto;
+  height: 100%;
   border-right: 1px solid #101116f5;
   display: none;
   z-index: 50;
-  position: absolute;
+  position: fixed;
 }
 
 .divLi{
@@ -389,6 +368,7 @@ hr{
 
 /* MAIN DIV */
 
+
 .divnewGames {
   display: flex;
   justify-content: center;
@@ -399,8 +379,8 @@ hr{
   gap: 30px;
   row-gap: 100px;
   padding-top: 50px;
-  padding-left: 210px;
-  height: 100vh;
+  min-height: 100vh;
+  margin-bottom: 150px;
 }
 
 .headGame{
@@ -637,11 +617,12 @@ hr{
 .footer{
   width: 100%;
   height: 80px;
-  background-color: #1f2030f5;
+  background-color: #1f2030;
   display: flex;
   color: white;
   font-family: 'Outfit', sans-serif;;
   justify-content: center;
   align-items: center;
+  position: relative;
   z-index: 100;
 }
