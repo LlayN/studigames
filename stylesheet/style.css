@@ -140,8 +140,6 @@ header{
 
 /* PRELOAD */
 .preLoader{
-  width: 100vw;
-  height: 100vh;
   position: fixed;
   z-index: 150;
 }
@@ -161,7 +159,7 @@ header{
 
 .divLoad > video{
   filter: contrast(50);
-  height: 100vh;
+  object-fit: contain;
 }
 
 .animVaisseau{
@@ -202,6 +200,7 @@ header{
   margin: 0;
   background-color: #1f2030;
   position: fixed;
+  box-shadow: 0px 1px 10px #1F2030;
 }
 
 /* BOUTON MENU */
@@ -235,7 +234,7 @@ header{
 .divButton{
   display: flex;
   height: 40px;
-  margin-right: 8px;
+  margin-right: 14px;
   
 }
 
@@ -262,46 +261,67 @@ header{
 .divSearchbarPc { 
   width: 45%;
   background-color: #1f2030;
+  height: 33px;
 }
 
 .searchbar {
+  width: 100%;
+  height: 33px;
   background-color: #343649;
   border: none;
   color: white;
   font-size: 17px;
   font-family: 'Outfit', sans-serif;
   border-radius: 10px 30px 10px 3px;
+  background-image: url(../resources/svg/search-sharp.svg);
+  background-repeat: no-repeat;
+  background-position: 5px center;
 }
 
 .searchbar::placeholder {
   color: white;
-  text-indent: 30px;
+  text-indent: 35px;
 }
 
 .searchbar:focus{
-  border: 1px solid #343649 ;
-  background-color: #343649;
-  color: white;
-  box-shadow: none;
-  border: none;
-}
-
-.searchbar:active{
-  box-shadow: none;
-  border: none;
+  outline: none;
+  text-indent: 35px;
 }
 
 .searchbar::placeholder{
-  background-image: url(../resources/svg/search-sharp.svg);
-  background-repeat: no-repeat;
+  
 }
 
-.form-control[type="search"]::-webkit-search-cancel-button,
-.form-control[type="search"]::-webkit-search-clear-button {
-  display: none;
+.cancelButton[type="search"]::-webkit-search-cancel-button,
+.clearButton[type="search"]::-webkit-search-clear-button {
+  appearance: none;
 }
 
 /* MENU LATERAL */
+
+.switchSearch {
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.searchBarMobile{
+  width: 120px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+.searchBarMobile::placeholder{
+  color: rgba(255, 255, 255, 0.226);
+  font-style: italic;
+}
+
+.searchBarMobile:focus{
+  outline: none;
+}
 
 .leftListPc{
   background-color: rgb(2, 2, 12);
@@ -331,11 +351,11 @@ header{
   font-size: 16px ;
 }
 
-.divLi:hover svg path{
+.hoverIcon:hover svg path{
   fill: #8619ea;
 }
 
-.divLi:hover{
+.hoverIcon:hover{
   color: #8619ea;
   font-weight: 500
 }
@@ -344,19 +364,7 @@ hr{
   color: rgb(49, 49, 49);
 }
 
-.bi-search{
-  font-size: 22px; 
-  color: #ffffff
-}
 
-.bi-list{
-  font-size: 30px; 
-  color: #53fc18;
-}
-
-.bi-heart{
-  font-size: 18px;
-}
 
 .divMenuLateral{
   display: flex;
@@ -364,16 +372,18 @@ hr{
   justify-content: space-around;
   align-items: center;
   margin-top: 33px;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 
 .buttonLateralPc, .buttonLateralMobile{
-  width: auto;
-  background-color: #34364900;
   border: none;
+  background-color: transparent;
   box-shadow: none;
-  
+  border-radius: 3px;
 }
+
+
+
 
 .divMenuLateral > h2{
   color: white;
@@ -390,7 +400,7 @@ hr{
 /* MENU BOTTOM MOBILE */
 
 .divMenuBottomMobile{
-  display: block;
+  display: none;
   width: 100%;
   height: 65px;
   background-color: #1f2030;
@@ -422,7 +432,10 @@ hr{
   gap: 30px;
   row-gap: 100px;
   padding-top: 50px;
+  padding-left: 210px;
   min-height: 100vh;
+  margin-bottom: 25px;
+  
 }
 
 .headGame{

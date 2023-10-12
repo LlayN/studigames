@@ -1,20 +1,27 @@
 @media (max-width: 767px){
 
-  .contHeader{
-    flex-direction: column;
-    gap: 5px;
-    height: 145px;
+  .divMenuBottomMobile{
+    display: block;
+
+
   }
+
+  .headGame{
+    min-width: 220px;
+  }
+
+  .btnStyle{
+    font-size: 16px;
+  }
+
   .divSearchbarPc{
+    display: none;
     width: 80vw;
   }
 
   .navbar{
-    height: 145px;
     background-color: #1F2030;
   }
-
-
 
   .divButton{
     display: none;
@@ -43,14 +50,6 @@
   }
 }
 
-@media (min-width: 767px){
-  .divSearchbarMobile{
-    display: none;
-  }
-  .divMenuBottomMobile{
-    display: none;
-  }
-}
 
 @media (max-width: 370px){
   .headGame{
@@ -62,6 +61,13 @@
  
 }
 
+@media (min-width: 767px){
+  .switchSearch{
+    display: none;
+}
+
+  
+}
 
 
 

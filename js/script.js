@@ -54,7 +54,6 @@ function loadRezise(){
     showDivPc.style.display = 'none'
     showDivMobile.style.display = 'block'
     divnewGames.style.paddingLeft = '60px'
-
   }
 }
 
