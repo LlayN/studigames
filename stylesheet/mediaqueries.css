@@ -2,21 +2,20 @@
 
   .contHeader{
     flex-direction: column;
-    height: 150px;
+    gap: 5px;
+    height: 145px;
   }
   .divSearchbarPc{
     width: 80vw;
   }
 
   .navbar{
-    height: 150px;
+    height: 145px;
+    background-color: #1F2030;
   }
 
 
 
-  .navbar{
-    box-shadow: 0px 0px 0px rgb(19, 19, 19);
-  }
   .divButton{
     display: none;
   }
