@@ -31,22 +31,6 @@
   }
 }
 
-@-webkit-keyframes afterLoaderAnim {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes afterLoaderAnim {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
  @-webkit-keyframes btnRegisterAnim {
   0% {
@@ -65,37 +49,6 @@
   }
 }
 
-@-webkit-keyframes colortitleLoad {
-  0% {
-    color: #ffffff;
-  }
-  33% {
-    color: #c401ff;
-  }
-  66% {
-    color: #8619ea;
-  }
-
-  100% {
-    color: #ffffff;
-  }
-}
-
-@keyframes colortitleLoad {
-  0% {
-    color: #ffffff;
-  }
-  33% {
-    color: #c401ff;
-  }
-  66% {
-    color: #8619ea;
-  }
-
-  100% {
-    color: #ffffff;
-  }
-}
 
  @-webkit-keyframes rotateSetting {
   0% {
@@ -137,53 +90,6 @@ header{
   background-color: #1f2030f5;
 }
 
-
-/* PRELOAD */
-.preLoader{
-  position: fixed;
-  z-index: 150;
-}
-
-
-.divLoad{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  color: rgb(214, 214, 214);
-  font-family: 'Bangers', cursive;
-  
-}
-
-.divLoad > video{
-  filter: contrast(50);
-  object-fit: contain;
-}
-
-.animVaisseau{
-  position: absolute;
-}
-
-
-.titleLoad{
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  transform: translateY(140px);
-  font-size: 42px;
-}
-
-.animVaisseau {
-	-webkit-animation: animVaisseau 0.5s infinite alternate-reverse both;
-	        animation: animVaisseau 0.5s infinite alternate-reverse both;
-}
-
-.afterLoaderAnim {
-	-webkit-animation: afterLoaderAnim 1s ease-out 2s both;
-	        animation: afterLoaderAnim 1s ease-out 2s both;
-}
 
 /* NAVBAR */
 .navbar{
@@ -252,10 +158,6 @@ header{
 	        animation: btnRegisterAnim 2s linear infinite alternate both;
 }
 
-.colortitleLoad {
-	-webkit-animation: colortitleLoad 2s linear infinite alternate both;
-	        animation: colortitleLoad 2s linear infinite alternate both;
-}
 
 /* BARRE DE RECHERCHE */
 .divSearchbarPc { 
@@ -434,7 +336,7 @@ hr{
   padding-top: 50px;
   padding-left: 210px;
   min-height: 100vh;
-  margin-bottom: 25px;
+  margin-bottom: 150px;
   
 }
 
