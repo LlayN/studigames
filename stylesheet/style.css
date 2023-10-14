@@ -106,7 +106,6 @@ header{
   margin: 0;
   background-color: #1f2030;
   position: fixed;
-  box-shadow: 0px 1px 10px #1F2030;
 }
 
 /* BOUTON MENU */
@@ -190,9 +189,6 @@ header{
   text-indent: 35px;
 }
 
-.searchbar::placeholder{
-  
-}
 
 .cancelButton[type="search"]::-webkit-search-cancel-button,
 .clearButton[type="search"]::-webkit-search-clear-button {
@@ -200,6 +196,12 @@ header{
 }
 
 /* MENU LATERAL */
+
+
+hr{
+  width: 70%;
+  margin: 15px 0px 0px 0px;
+}
 
 .switchSearch {
   display: flex;
@@ -226,22 +228,25 @@ header{
 }
 
 .leftListPc{
+  display: none;
   background-color: rgb(2, 2, 12);
   width: 200px;
   border-right: 1px solid #101116f5;
   z-index: 50;
   height: 100vh;
   position: fixed;
+  padding: 0;
 }
 
 .leftListMobile{
+  display: flex;
   background-color: rgb(2, 2, 12);
-  width: 50px;
-  height: 100%;
-  border-right: 1px solid #101116f5;
-  display: none;
+  width: 100%;
+  height: 50px;
   z-index: 50;
   position: fixed;
+  padding: 0;
+
 }
 
 .divLi{
@@ -262,30 +267,71 @@ header{
   font-weight: 500
 }
 
-hr{
-  color: rgb(49, 49, 49);
+.closebuttonLateral{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
 }
 
 
 
-.divMenuLateral{
+.divMenuLateralPc{
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
-  margin-top: 33px;
-  margin-bottom: 6px;
+  margin: 10px 0px 2px 34px;
 }
+
+
+.divMenuLateralMobile{
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  
+}
+
+.divMenuLateralMobile::-webkit-scrollbar {
+  height: 1.5px;
+}
+
+.divMenuLateralMobile::-webkit-scrollbar-button {
+  width: 100vw;
+  height: 100px;
+}
+
+.divMenuLateralMobile::-webkit-scrollbar-thumb {
+  background: #8619ea;
+  border: 0px none #ffffff;
+}
+
+.divMenuLateralMobile::-webkit-scrollbar-track {
+  background: #0a0a16;
+}
+
+.divMenuLateralMobile::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+.divMenuLateralMobile::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
 
 .buttonLateralPc, .buttonLateralMobile{
   border: none;
   background-color: transparent;
   box-shadow: none;
-  border-radius: 3px;
+  padding-left: 12px;
 }
 
 
+.iconmenuMobile{
+  margin: 0px 4.5px 0px 4.5px;
 
+
+}
 
 .divMenuLateral > h2{
   color: white;
@@ -333,8 +379,8 @@ hr{
 
 .contGames{
   display: flex;
-  padding-top: 50px;
-  padding-left: 230px;
+  padding-top: 80px;
+  padding-left: 12px;
   flex-direction: column;
   max-width: 2000px;
 }
@@ -344,8 +390,6 @@ hr{
   flex-wrap: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
-  scrollbar-width: thin; 
-  scrollbar-color: transparent transparent transparent #f32626; 
   margin-bottom: 30px;
 }
 
@@ -399,46 +443,43 @@ h2{
   font-family: 'Outfit', sans-serif;;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   z-index: 100;
   bottom: 0;
 }
 
 
 
-::-webkit-scrollbar {
-  height: 4px;
+.rowGames::-webkit-scrollbar {
+  height: 3px;
 }
 
-::-webkit-scrollbar-button {
+.rowGames::-webkit-scrollbar-button {
   width: 100px;
   height: 100px;
 }
 
-::-webkit-scrollbar-thumb {
+.rowGames::-webkit-scrollbar-thumb {
   background: #8619ea;
   border: 0px none #ffffff;
   border-radius: 50px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #c487fd;
-}
-::-webkit-scrollbar-thumb:active {
+.rowGames::-webkit-scrollbar-thumb:active {
   background: #8619ea;
 }
-::-webkit-scrollbar-track {
+.rowGames::-webkit-scrollbar-track {
   background: #666666;
   border: 0px none #ffffff;
   border-radius: 50px;
 }
-::-webkit-scrollbar-track:hover {
+.rowGames::-webkit-scrollbar-track:hover {
   background: #666666;
 }
-::-webkit-scrollbar-track:active {
+.rowGames::-webkit-scrollbar-track:active {
   background: #333333;
 }
-::-webkit-scrollbar-corner {
+.rowGames::-webkit-scrollbar-corner {
   background: transparent;
 }
 

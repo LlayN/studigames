@@ -5,6 +5,7 @@ const showDivPc = document.querySelector('.leftListPc')
 const btnRegister = document.querySelector('.btn-register')
 const contGames = document.querySelectorAll('.contGames')
 const rowGames = document.querySelectorAll('.rowGames')
+const divMenuLateralMobile = document.querySelector('.divMenuLateralMobile')
 
 
 /* CODE POUR BOUTON LATERAL MENU */
@@ -13,10 +14,11 @@ let checkLateral = window.innerWidth <= 767;
 
 buttonLateralPc.addEventListener('click', () => {
   showDivPc.style.display = 'none'
-  showDivMobile.style.display = 'block'
+  showDivMobile.style.display = 'flex'
   if(window.innerWidth >= 767){
     contGames.forEach((element) => {
-      element.style.paddingLeft = '80px'
+      element.style.paddingLeft = '12px'
+      element.style.paddingTop = '80px'
     })
   }
   
@@ -28,46 +30,27 @@ buttonLateralMobile.addEventListener('click', () => {
   if(window.innerWidth >= 767){
     contGames.forEach((element) => {
       element.style.paddingLeft = '230px'
+      element.style.paddingTop = '25px'
     })
 
   }
   
 })
 
-function handleResize() {
-  if (window.innerWidth <= 767 && !checkLateral) {
-    checkLateral = true;
-    showDivPc.style.display = 'none';
-    showDivMobile.style.display = 'block';
-    contGames.forEach((element) => {
-      element.style.paddingLeft = '80px'
-    })
 
-
-  } 
-  else if (window.innerWidth > 767 && checkLateral) {
-    checkLateral = false;
-    showDivMobile.style.display = 'none';
-    showDivPc.style.display = 'block';
-    contGames.forEach((element) => {
-      element.style.paddingLeft = '230px'
-    })
-
-  }
-}
 
 function loadRezise(){
   if(window.innerWidth <= 767){
     showDivPc.style.display = 'none'
-    showDivMobile.style.display = 'block'
+    showDivMobile.style.display = 'flex'
     contGames.forEach((element) => {
-      element.style.paddingLeft = '80px'
+      element.style.paddingLeft = '12px'
+      element.style.paddingTop = '80px'
     })
   }
 }
 
 window.addEventListener('load', loadRezise);
-window.addEventListener('resize', handleResize);
 
 btnRegister.addEventListener('mouseenter', () => {
   btnRegister.classList.add('btnRegisterAnim')
@@ -84,3 +67,8 @@ rowGames.forEach((element) => {
     this.scrollLeft += e.deltaY;
     
 })})
+
+divMenuLateralMobile.addEventListener('wheel', function (e) {
+  e.preventDefault()
+  this.scrollLeft += e.deltaY;
+})
