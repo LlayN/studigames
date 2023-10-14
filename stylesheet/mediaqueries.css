@@ -38,12 +38,25 @@
   }
 
   .headNewGames_one{
-    width: 280px;
-    min-width: 280px;
+    width: 180px;
+    min-width: 180px;
   }
   .headNewGames_two, .headNewGames_tree , .headNewGames_four{
-    width: 150px;
-    min-width: 150px;
+    width: 100px;
+    min-width: 100px;
+  }
+
+  .headGame , .headNewGames{
+    height: 70px;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+  ::-webkit-scrollbar-button {
+    width: 30px;
+    height: 30px;
   }
 }
 

@@ -4,6 +4,7 @@ const showDivMobile = document.querySelector('.leftListMobile')
 const showDivPc = document.querySelector('.leftListPc')
 const btnRegister = document.querySelector('.btn-register')
 const contGames = document.querySelectorAll('.contGames')
+const rowGames = document.querySelectorAll('.rowGames')
 
 
 /* CODE POUR BOUTON LATERAL MENU */
@@ -75,3 +76,11 @@ btnRegister.addEventListener('mouseenter', () => {
 btnRegister.addEventListener('mouseleave', () => {
   btnRegister.classList.remove('btnRegisterAnim')
 })
+
+
+rowGames.forEach((element) => {
+  element.addEventListener('wheel', function (e) {
+    console.log(e)
+    e.preventDefault()
+    this.scrollLeft += e.deltaY;
+})})

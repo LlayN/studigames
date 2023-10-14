@@ -342,36 +342,31 @@ hr{
 
 .rowGames{
   flex-wrap: nowrap;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   scrollbar-width: thin; 
   scrollbar-color: transparent transparent transparent #f32626; 
   margin-bottom: 30px;
 }
 
+
+
+
 .divnewGames {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   padding: 10px 10px 15px 10px;
 }
 
 .headGame , .headNewGames{
-  height: 170px;
-  border-radius: 8px;
+  height: 150px;
+  border-radius: 12px;
   box-shadow: 0px 0px 5px rgb(29, 29, 29);
   display: flex;
 }
 
-.headNewGames_one{
-  width: 350px;
-  min-width: 350px;
-  background-image: url(../resources/image/dicebattle.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
-
-.headNewGames_two, .headNewGames_tree , .headNewGames_four{
+.headNewGames_one, .headNewGames_two, .headNewGames_tree , .headNewGames_four{
   width: 200px;
   min-width: 200px;
   background-image: url(../resources/image/dicebattle.png);
@@ -389,7 +384,7 @@ h2{
   color: white;
   font-family: 'Outfit', sans-serif;
   font-size: 1.3rem;
-  margin-bottom: 20px;
+
 
 }
 
@@ -404,17 +399,48 @@ h2{
   font-family: 'Outfit', sans-serif;;
   justify-content: center;
   align-items: center;
-
+  position: absolute;
   z-index: 100;
   bottom: 0;
 }
 
 
 
+::-webkit-scrollbar {
+  height: 4px;
+}
 
+::-webkit-scrollbar-button {
+  width: 100px;
+  height: 100px;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #8619ea;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
 
-
+::-webkit-scrollbar-thumb:hover {
+  background: #c487fd;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #8619ea;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 
 
 
