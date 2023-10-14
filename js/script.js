@@ -3,8 +3,7 @@ const buttonLateralMobile = document.querySelector('.buttonLateralMobile')
 const showDivMobile = document.querySelector('.leftListMobile')
 const showDivPc = document.querySelector('.leftListPc')
 const btnRegister = document.querySelector('.btn-register')
-const divnewGames = document.querySelector('.divnewGames')
-
+const contGames = document.querySelectorAll('.contGames')
 
 
 /* CODE POUR BOUTON LATERAL MENU */
@@ -15,8 +14,9 @@ buttonLateralPc.addEventListener('click', () => {
   showDivPc.style.display = 'none'
   showDivMobile.style.display = 'block'
   if(window.innerWidth >= 767){
-    divnewGames.style.paddingLeft = '60px'
-    divGameLaunch.style.paddingLeft = '60px'
+    contGames.forEach((element) => {
+      element.style.paddingLeft = '60px'
+    })
   }
   
 })
@@ -25,7 +25,9 @@ buttonLateralMobile.addEventListener('click', () => {
   showDivMobile.style.display = 'none'
   showDivPc.style.display = 'block'
   if(window.innerWidth >= 767){
-    divnewGames.style.paddingLeft = '210px'
+    contGames.forEach((element) => {
+      element.style.paddingLeft = '230px'
+    })
 
   }
   
@@ -36,7 +38,9 @@ function handleResize() {
     checkLateral = true;
     showDivPc.style.display = 'none';
     showDivMobile.style.display = 'block';
-    divnewGames.style.paddingLeft = '60px'
+    contGames.forEach((element) => {
+      element.style.paddingLeft = '60px'
+    })
 
 
   } 
@@ -44,7 +48,9 @@ function handleResize() {
     checkLateral = false;
     showDivMobile.style.display = 'none';
     showDivPc.style.display = 'block';
-    divnewGames.style.paddingLeft = '210px'
+    contGames.forEach((element) => {
+      element.style.paddingLeft = '230px'
+    })
 
   }
 }
@@ -53,20 +59,14 @@ function loadRezise(){
   if(window.innerWidth <= 767){
     showDivPc.style.display = 'none'
     showDivMobile.style.display = 'block'
-    divnewGames.style.paddingLeft = '60px'
+    contGames.forEach((element) => {
+      element.style.paddingLeft = '60px'
+    })
   }
 }
 
 window.addEventListener('load', loadRezise);
 window.addEventListener('resize', handleResize);
-
-
-const preLoader = document.querySelector('.preLoader')
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    preLoader.style.display = "none"
-  }, 2500)
-})
 
 btnRegister.addEventListener('mouseenter', () => {
   btnRegister.classList.add('btnRegisterAnim')

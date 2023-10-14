@@ -1,14 +1,8 @@
 @media (max-width: 767px){
-
   .divMenuBottomMobile{
     display: block;
-
-
   }
 
-  .headGame{
-    min-width: 220px;
-  }
 
   .btnStyle{
     font-size: 16px;
@@ -42,7 +36,22 @@
   .footer{
     display: none;
   }
+
+  .headNewGames_one{
+    width: 280px;
+    min-width: 280px;
+  }
+  .headNewGames_two, .headNewGames_tree , .headNewGames_four{
+    width: 150px;
+    min-width: 150px;
+  }
 }
+
+
+
+
+
+
 
 @media (max-width: 259px){
   body{
@@ -52,9 +61,7 @@
 
 
 @media (max-width: 370px){
-  .headGame{
-    min-width: 170px;
-  }
+
   .btnStyle{
     font-size: 16px;
   }
@@ -66,7 +73,6 @@
     display: none;
 }
 
-  
 }
 
 
