@@ -16,7 +16,7 @@ buttonLateralPc.addEventListener('click', () => {
   showDivMobile.style.display = 'block'
   if(window.innerWidth >= 767){
     contGames.forEach((element) => {
-      element.style.paddingLeft = '60px'
+      element.style.paddingLeft = '80px'
     })
   }
   
@@ -40,7 +40,7 @@ function handleResize() {
     showDivPc.style.display = 'none';
     showDivMobile.style.display = 'block';
     contGames.forEach((element) => {
-      element.style.paddingLeft = '60px'
+      element.style.paddingLeft = '80px'
     })
 
 
@@ -61,7 +61,7 @@ function loadRezise(){
     showDivPc.style.display = 'none'
     showDivMobile.style.display = 'block'
     contGames.forEach((element) => {
-      element.style.paddingLeft = '60px'
+      element.style.paddingLeft = '80px'
     })
   }
 }
@@ -80,7 +80,7 @@ btnRegister.addEventListener('mouseleave', () => {
 
 rowGames.forEach((element) => {
   element.addEventListener('wheel', function (e) {
-    console.log(e)
     e.preventDefault()
     this.scrollLeft += e.deltaY;
+    
 })})
