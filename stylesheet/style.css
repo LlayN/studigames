@@ -203,6 +203,10 @@ hr {
   margin: 15px 0px 0px 0px;
 }
 
+.switchSearch {
+  display: flex;
+  margin-bottom: 3px;
+}
 
 .searchBarMobile {
   width: 120px;
@@ -270,10 +274,12 @@ hr {
 
 .divMenuLateralPc {
   display: flex;
-  width: 100%;
   justify-content: start;
   align-items: center;
-  margin: 10px 0px 2px 34px;
+  margin: 0px 0px 2px 34px;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.3rem;
 }
 
 .divMenuLateralMobile {
