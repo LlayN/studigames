@@ -37,15 +37,20 @@
     display: none;
   }
 
-  .headNewGames_two,
-  .headNewGames_tree,
-  .headNewGames_four {
+  .headNewGames {
     width: 145px;
     min-width: 145px;
+    height: 90px;
   }
 
-  .headGame,
-  .headNewGames {
+  .headTendanceGames {
+    width: 145px;
+    min-width: 145px;
+    height: 90px;
+  }
+
+
+  .headGame{
     height: 90px;
   }
 

@@ -184,15 +184,25 @@ header {
 
 /* MENU LATERAL */
 
+
+.labelNew{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8619ea;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 0.9rem;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  height: 20px;
+  width: 40px;
+}
+
 hr {
   width: 70%;
   margin: 15px 0px 0px 0px;
 }
 
-.switchSearch {
-  display: flex;
-  margin-bottom: 3px;
-}
 
 .searchBarMobile {
   width: 120px;
@@ -279,7 +289,6 @@ hr {
 
 
 ::-webkit-scrollbar {
-  -webkit-appearance: none;
   height: 1.5px;
 }
 
@@ -377,28 +386,77 @@ hr {
 }
 
 .headGame,
-.headNewGames {
+.headNewGames,
+.headTendanceGames {
+  width: 200px;
+  min-width: 200px;
   height: 150px;
   border-radius: 12px;
   box-shadow: 0px 0px 5px rgb(29, 29, 29);
   display: flex;
-}
-
-.headNewGames_one,
-.headNewGames_two,
-.headNewGames_tree,
-.headNewGames_four {
-  width: 200px;
-  min-width: 200px;
-  background-image: url(../resources/image/dicebattle.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.headNewGames_one{
+  background-image: url(../resources/svg/games/dicefive.svg);
+}
+
+.headNewGames_two{
+  background-image: url(../resources/svg/games/volleysmash.svg);
+}
+
+.headNewGames_three{
+  background-image: url(../resources/svg/games/creatureclash.svg);
+  background-position: 0px -35px;
+}
+
+.headNewGames_four{
+  background-image: url(../resources/svg/games/riverside.svg);
+  background-position: top;
+}
+
+.headNewGames_five{
+  background-image: url(../resources/svg/games/gourmetglamping.svg);
+}
+
+.headNewGames_six{
+  background-image: url(../resources/svg/games/monsterphobia.svg);
+}
+
+.headTendanceGames_one{
+  background-image: url(../resources/svg/games/rps.svg);
+  background-position: bottom;
+}
+
+.headTendanceGames_two{
+  background-image: url(../resources/svg/games/rushroyale.svg);
+  background-position: bottom;
+}
+
+.headTendanceGames_three{
+  background-image: url(../resources/svg/games/wander.svg);
+}
+
+.headTendanceGames_four{
+  background-image: url(../resources/svg/games/jurrasicbubble.svg);
+  background-position: 0px 0px;
+}
+
+.headTendanceGames_five{
+  background-image: url(../resources/svg/games/lootin.svg);
+  background-position: bottom;
+}
+
+.headTendanceGames_six{
+  background-image: url(../resources/svg/games/merge.svg);
+}
+
 .rotateSetting {
   -webkit-animation: rotateSetting 1.9s linear infinite both;
   animation: rotateSetting 1.9s linear infinite both;
+
 }
 
 h2 {
