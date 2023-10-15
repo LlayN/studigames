@@ -1,52 +1,55 @@
-@media (max-width: 767px){
-  .divMenuBottomMobile{
+@media (max-width: 767px) {
+  .divMenuBottomMobile {
     display: block;
   }
 
-
-  .btnStyle{
+  .btnStyle {
     font-size: 16px;
   }
 
-  .divSearchbarPc{
+  .divSearchbarPc {
     display: none;
     width: 80vw;
   }
 
-  .navbar{
-    background-color: #1F2030;
+  .navbar {
+    background-color: #1f2030;
   }
 
-  .divButton{
+  .divButton {
     display: none;
   }
-  .divButtonMobile > button{
+  .divButtonMobile > button {
     display: flex;
     font-size: 16px;
     justify-content: center;
     align-items: center;
   }
-  .contHeader{
+  .contHeader {
     justify-content: center;
   }
-  .logo{
+  .logo {
+    content: url(../resources/svg/logo2-mobile.svg);
     margin-top: 5px;
   }
 
-  .footer{
+  .footer {
     display: none;
   }
 
-  .headNewGames_two, .headNewGames_tree , .headNewGames_four{
-    width: 130px;
-    min-width: 130px;
+  .headNewGames_two,
+  .headNewGames_tree,
+  .headNewGames_four {
+    width: 145px;
+    min-width: 145px;
   }
 
-  .headGame , .headNewGames{
-    height: 80px;
+  .headGame,
+  .headNewGames {
+    height: 90px;
   }
 
-  h2{
+  h2 {
     font-size: 1.1rem;
   }
 
@@ -56,40 +59,20 @@
   }
 }
 
-
-
-
-
-
-
-@media (max-width: 259px){
-  body{
+@media (max-width: 259px) {
+  body {
     display: none;
   }
 }
 
-
-@media (max-width: 370px){
-
-  .btnStyle{
+@media (max-width: 370px) {
+  .btnStyle {
     font-size: 16px;
   }
- 
 }
 
-@media (min-width: 767px){
-  .switchSearch{
+@media (min-width: 767px) {
+  .switchSearch {
     display: none;
+  }
 }
-
-}
-
-
-
-
-
-
-
-
-
-

@@ -1,38 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
- @-webkit-keyframes animVaisseau {
+@-webkit-keyframes animVaisseau {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
   100% {
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
 }
 @keyframes animVaisseau {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
   100% {
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-
+    transform-origin: 50% 50%;
   }
 }
 
-
- @-webkit-keyframes btnRegisterAnim {
+@-webkit-keyframes btnRegisterAnim {
   0% {
     background: #8619ea;
   }
@@ -49,55 +47,48 @@
   }
 }
 
-
- @-webkit-keyframes rotateSetting {
+@-webkit-keyframes rotateSetting {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes rotateSetting {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-
-
-
 /* RACINE */
-html{
-  margin: 0;  
+html {
+  margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background-color: #02020c;
-  
 }
 
-
-header{
+header {
   background-color: #1f2030f5;
 }
 
-
 /* NAVBAR */
-.navbar{
+.navbar {
   height: 70px;
   z-index: 100;
 }
 
-.contHeader{
+.contHeader {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -109,57 +100,54 @@ header{
 }
 
 /* BOUTON MENU */
-.btn-register{
+.btn-register {
   background-color: #8619ea;
   box-shadow: 4px -2px 13px rgb(19, 19, 19);
   color: white;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 1.12rem;
   width: 110px;
   border: none;
   border-radius: 10px 3px 10px 3px;
 }
 
-.btn-register:hover{
+.btn-register:hover {
   color: white;
 }
 
-.btn-connect{
+.btn-connect {
   color: #ffffff;
   background-color: transparent;
-  font-family: 'Outfit', sans-serif; 
+  font-family: "Outfit", sans-serif;
   font-size: 1.12rem;
   border: 0;
 }
 
-.btn-connect:hover{
+.btn-connect:hover {
   color: #ffffff8f;
 }
 
-.divButton{
+.divButton {
   display: flex;
   height: 40px;
   margin-right: 14px;
-  
 }
 
-.divButtonMobile{
+.divButtonMobile {
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
- 
 }
 
 .btnRegisterAnim {
-	-webkit-animation: btnRegisterAnim 2s linear infinite alternate both;
-	        animation: btnRegisterAnim 2s linear infinite alternate both;
+  -webkit-animation: btnRegisterAnim 2s linear infinite alternate both;
+  animation: btnRegisterAnim 2s linear infinite alternate both;
 }
 
-
 /* BARRE DE RECHERCHE */
-.divSearchbarPc { 
+.divSearchbarPc {
   width: 45%;
   background-color: #1f2030;
   height: 33px;
@@ -172,7 +160,7 @@ header{
   border: none;
   color: white;
   font-size: 1.12rem;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   border-radius: 10px 30px 10px 3px;
   background-image: url(../resources/svg/search-sharp.svg);
   background-repeat: no-repeat;
@@ -184,11 +172,10 @@ header{
   text-indent: 35px;
 }
 
-.searchbar:focus{
+.searchbar:focus {
   outline: none;
   text-indent: 35px;
 }
-
 
 .cancelButton[type="search"]::-webkit-search-cancel-button,
 .clearButton[type="search"]::-webkit-search-clear-button {
@@ -197,8 +184,7 @@ header{
 
 /* MENU LATERAL */
 
-
-hr{
+hr {
   width: 70%;
   margin: 15px 0px 0px 0px;
 }
@@ -208,26 +194,26 @@ hr{
   margin-bottom: 3px;
 }
 
-.searchBarMobile{
+.searchBarMobile {
   width: 120px;
   border-radius: 5px;
   border: none;
   color: white;
   background-color: transparent;
   padding: 0;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
-.searchBarMobile::placeholder{
+.searchBarMobile::placeholder {
   color: rgba(255, 255, 255, 0.226);
   font-style: italic;
 }
 
-.searchBarMobile:focus{
+.searchBarMobile:focus {
   outline: none;
 }
 
-.leftListPc{
+.leftListPc {
   display: none;
   background-color: rgb(2, 2, 12);
   width: 200px;
@@ -238,7 +224,7 @@ hr{
   padding: 0;
 }
 
-.leftListMobile{
+.leftListMobile {
   display: flex;
   background-color: rgb(2, 2, 12);
   width: 100%;
@@ -246,36 +232,33 @@ hr{
   z-index: 50;
   position: fixed;
   padding: 0;
-
 }
 
-.divLi{
+.divLi {
   display: flex;
   width: 70%;
   color: white;
   margin-top: 10px;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 1.12rem;
 }
 
-.hoverIcon:hover svg path{
+.hoverIcon:hover svg path {
   fill: #8619ea;
 }
 
-.hoverIcon:hover{
+.hoverIcon:hover {
   color: #8619ea;
-  font-weight: 500
+  font-weight: 500;
 }
 
-.closebuttonLateral{
+.closebuttonLateral {
   display: flex;
   justify-content: flex-end;
   margin-top: 5px;
 }
 
-
-
-.divMenuLateralPc{
+.divMenuLateralPc {
   display: flex;
   width: 100%;
   justify-content: start;
@@ -283,71 +266,70 @@ hr{
   margin: 10px 0px 2px 34px;
 }
 
-
-.divMenuLateralMobile{
+.divMenuLateralMobile {
   display: flex;
   align-items: center;
   overflow-x: scroll;
-  
-}
-
-.divMenuLateralMobile::-webkit-scrollbar {
-  height: 1.5px;
 }
 
 .divMenuLateralMobile::-webkit-scrollbar-button {
-  width: 100vw;
-  height: 100px;
+  width: 30px;
 }
 
-.divMenuLateralMobile::-webkit-scrollbar-thumb {
+
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  height: 1.5px;
+}
+
+::-webkit-scrollbar-button {
+  width: 100px;
+}
+
+::-webkit-scrollbar-thumb {
   background: #8619ea;
   border: 0px none #ffffff;
 }
 
-.divMenuLateralMobile::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: #0a0a16;
 }
 
-.divMenuLateralMobile::-webkit-scrollbar-track:active {
+::-webkit-scrollbar-track:active {
   background: #333333;
 }
-.divMenuLateralMobile::-webkit-scrollbar-corner {
+::-webkit-scrollbar-corner {
   background: transparent;
 }
 
-
-
-
-.buttonLateralPc, .buttonLateralMobile{
+.buttonLateralPc,
+.buttonLateralMobile {
   border: none;
   background-color: transparent;
   box-shadow: none;
   padding-left: 12px;
 }
 
-
-.iconmenuMobile{
+.iconmenuMobile {
   margin: 0px 4.5px 0px 4.5px;
-
-
 }
 
-.divMenuLateral > h2{
+.divMenuLateral > h2 {
   color: white;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 1.1875rem;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
-.divMenuLateral > *{
+.divMenuLateral > * {
   padding: 0;
   margin: 0;
 }
 
 /* MENU BOTTOM MOBILE */
 
-.divMenuBottomMobile{
+.divMenuBottomMobile {
   display: none;
   width: 100%;
   height: 65px;
@@ -357,7 +339,7 @@ hr{
   z-index: 100;
 }
 
-.divDesign{
+.divDesign {
   width: 100%;
   height: 10px;
   position: absolute;
@@ -369,32 +351,24 @@ hr{
 
 /* MAIN DIV */
 
-.rowAside{
+.rowAside {
   flex-direction: column;
-
-
-
+  align-content: flex-start;
 }
 
-
-.contGames{
+.contGames {
   display: flex;
   padding-top: 80px;
   padding-left: 12px;
   flex-direction: column;
-  max-width: 2000px;
 }
 
-
-.rowGames{
+.rowGames {
   flex-wrap: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
   margin-bottom: 30px;
 }
-
-
-
 
 .divnewGames {
   display: flex;
@@ -402,15 +376,18 @@ hr{
   padding: 10px 10px 15px 10px;
 }
 
-.headGame , .headNewGames{
+.headGame,
+.headNewGames {
   height: 150px;
   border-radius: 12px;
   box-shadow: 0px 0px 5px rgb(29, 29, 29);
   display: flex;
 }
 
-
-.headNewGames_one, .headNewGames_two, .headNewGames_tree , .headNewGames_four{
+.headNewGames_one,
+.headNewGames_two,
+.headNewGames_tree,
+.headNewGames_four {
   width: 200px;
   min-width: 200px;
   background-image: url(../resources/image/dicebattle.png);
@@ -420,69 +397,29 @@ hr{
 }
 
 .rotateSetting {
-	-webkit-animation: rotateSetting 1.9s linear infinite both;
-	        animation: rotateSetting 1.9s linear infinite both;
+  -webkit-animation: rotateSetting 1.9s linear infinite both;
+  animation: rotateSetting 1.9s linear infinite both;
 }
 
-h2{
+h2 {
   color: white;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 1.3rem;
-
-
+  margin: 0;
 }
 
 /* FOOTER */
 
-.footer{
+.footer {
   width: 100%;
   height: 80px;
   background-color: #1f2030;
   display: flex;
   color: white;
-  font-family: 'Outfit', sans-serif;;
+  font-family: "Outfit", sans-serif;
   justify-content: center;
   align-items: center;
   position: fixed;
   z-index: 100;
   bottom: 0;
 }
-
-
-
-.rowGames::-webkit-scrollbar {
-  height: 3px;
-}
-
-.rowGames::-webkit-scrollbar-button {
-  width: 100px;
-  height: 100px;
-}
-
-.rowGames::-webkit-scrollbar-thumb {
-  background: #8619ea;
-  border: 0px none #ffffff;
-  border-radius: 50px;
-}
-
-.rowGames::-webkit-scrollbar-thumb:active {
-  background: #8619ea;
-}
-.rowGames::-webkit-scrollbar-track {
-  background: #666666;
-  border: 0px none #ffffff;
-  border-radius: 50px;
-}
-.rowGames::-webkit-scrollbar-track:hover {
-  background: #666666;
-}
-.rowGames::-webkit-scrollbar-track:active {
-  background: #333333;
-}
-.rowGames::-webkit-scrollbar-corner {
-  background: transparent;
-}
-
-
-
-
